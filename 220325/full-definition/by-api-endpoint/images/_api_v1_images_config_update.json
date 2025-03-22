@@ -1,0 +1,46 @@
+{
+  "/api/v1/images/config/update": {
+    "post": {
+      "tags": [
+        "images"
+      ],
+      "summary": "Update Config",
+      "operationId": "update_config_api_v1_images_config_update_post",
+      "requestBody": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ConfigForm"
+            }
+          }
+        },
+        "required": true
+      },
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        },
+        "422": {
+          "description": "Validation Error",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HTTPValidationError"
+              }
+            }
+          }
+        }
+      },
+      "security": [
+        {
+          "HTTPBearer": []
+        }
+      ]
+    }
+  }
+}

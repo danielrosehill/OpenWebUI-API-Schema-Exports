@@ -1,0 +1,20 @@
+# /api/v1/models/
+
+## Table of contents:
+- [get](#get)
+
+<a name="get" />
+## get
+
+**tags:** ['models']
+
+**summary:** Get Models
+
+**operationId:** get_models_api_v1_models__get
+
+**security:** [{'HTTPBearer': []}]
+
+**parameters:** [{'name': 'id', 'in': 'query', 'required': False, 'schema': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'title': 'Id'}}]
+
+**responses:** {'200': {'description': 'Successful Response', 'content': {'application/json': {'schema': {'type': 'array', 'items': {'$ref': '#/components/schemas/ModelUserResponse'}, 'title': 'Response Get Models Api V1 Models  Get'}}}}, '422': {'description': 'Validation Error', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/HTTPValidationError'}}}}}
+

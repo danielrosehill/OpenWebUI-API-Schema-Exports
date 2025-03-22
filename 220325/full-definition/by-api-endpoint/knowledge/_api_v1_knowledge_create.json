@@ -1,0 +1,56 @@
+{
+  "/api/v1/knowledge/create": {
+    "post": {
+      "tags": [
+        "knowledge"
+      ],
+      "summary": "Create New Knowledge",
+      "operationId": "create_new_knowledge_api_v1_knowledge_create_post",
+      "requestBody": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/KnowledgeForm"
+            }
+          }
+        },
+        "required": true
+      },
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/KnowledgeResponse"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Response Create New Knowledge Api V1 Knowledge Create Post"
+              }
+            }
+          }
+        },
+        "422": {
+          "description": "Validation Error",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HTTPValidationError"
+              }
+            }
+          }
+        }
+      },
+      "security": [
+        {
+          "HTTPBearer": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "/api/v1/users/default/permissions": {
+    "get": {
+      "tags": [
+        "users"
+      ],
+      "summary": "Get User Permissions",
+      "operationId": "get_user_permissions_api_v1_users_default_permissions_get",
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserPermissions"
+              }
+            }
+          }
+        }
+      },
+      "security": [
+        {
+          "HTTPBearer": []
+        }
+      ]
+    },
+    "post": {
+      "tags": [
+        "users"
+      ],
+      "summary": "Update User Permissions",
+      "operationId": "update_user_permissions_api_v1_users_default_permissions_post",
+      "requestBody": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/UserPermissions"
+            }
+          }
+        },
+        "required": true
+      },
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        },
+        "422": {
+          "description": "Validation Error",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HTTPValidationError"
+              }
+            }
+          }
+        }
+      },
+      "security": [
+        {
+          "HTTPBearer": []
+        }
+      ]
+    }
+  }
+}

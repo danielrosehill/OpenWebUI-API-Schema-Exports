@@ -1,0 +1,36 @@
+# /api/v1/users/{user_id}
+
+## Table of contents:
+- [get](#get)
+- [delete](#delete)
+
+<a name="get" />
+## get
+
+**tags:** ['users']
+
+**summary:** Get User By Id
+
+**operationId:** get_user_by_id_api_v1_users__user_id__get
+
+**security:** [{'HTTPBearer': []}]
+
+**parameters:** [{'name': 'user_id', 'in': 'path', 'required': True, 'schema': {'type': 'string', 'title': 'User Id'}}]
+
+**responses:** {'200': {'description': 'Successful Response', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/open_webui__routers__users__UserResponse'}}}}, '422': {'description': 'Validation Error', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/HTTPValidationError'}}}}}
+
+<a name="delete" />
+## delete
+
+**tags:** ['users']
+
+**summary:** Delete User By Id
+
+**operationId:** delete_user_by_id_api_v1_users__user_id__delete
+
+**security:** [{'HTTPBearer': []}]
+
+**parameters:** [{'name': 'user_id', 'in': 'path', 'required': True, 'schema': {'type': 'string', 'title': 'User Id'}}]
+
+**responses:** {'200': {'description': 'Successful Response', 'content': {'application/json': {'schema': {'type': 'boolean', 'title': 'Response Delete User By Id Api V1 Users  User Id  Delete'}}}}, '422': {'description': 'Validation Error', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/HTTPValidationError'}}}}}
+

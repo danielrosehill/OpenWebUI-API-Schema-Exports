@@ -1,0 +1,18 @@
+# /api/v1/utils/db/download
+
+## Table of contents:
+- [get](#get)
+
+<a name="get" />
+## get
+
+**tags:** ['utils']
+
+**summary:** Download Db
+
+**operationId:** download_db_api_v1_utils_db_download_get
+
+**responses:** {'200': {'description': 'Successful Response', 'content': {'application/json': {'schema': {}}}}}
+
+**security:** [{'HTTPBearer': []}]
+
