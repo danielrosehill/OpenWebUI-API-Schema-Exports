@@ -83,3 +83,14 @@ These exports are useful for:
 - Building integrations with OpenWebUI
 - Documenting specific endpoints for reference
 - Tracking API changes between versions
+
+## Why Chunked JSON Files?
+
+The full OpenWebUI API schema is quite extensive and lengthy. By breaking it down into smaller, categorized chunks:
+
+- It becomes much easier to understand specific API sections without navigating a massive JSON file
+- The chunked files are ideal for context-limited AI tools, enabling AI-assisted development with OpenWebUI
+- Individual endpoint documentation can be more easily referenced and shared
+- Changes to specific API sections can be tracked more effectively between versions
+
+For official and comprehensive documentation, please refer to the project's documentation at: https://github.com/open-webui/docs
