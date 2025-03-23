@@ -1,0 +1,18 @@
+{
+  "/health/db": {
+    "get": {
+      "summary": "Healthcheck With Db",
+      "operationId": "healthcheck_with_db_health_db_get",
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

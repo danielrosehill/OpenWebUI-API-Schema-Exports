@@ -1,0 +1,46 @@
+{
+  "/ollama/verify": {
+    "post": {
+      "tags": [
+        "ollama"
+      ],
+      "summary": "Verify Connection",
+      "operationId": "verify_connection_ollama_verify_post",
+      "requestBody": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/open_webui__routers__ollama__ConnectionVerificationForm"
+            }
+          }
+        },
+        "required": true
+      },
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        },
+        "422": {
+          "description": "Validation Error",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HTTPValidationError"
+              }
+            }
+          }
+        }
+      },
+      "security": [
+        {
+          "HTTPBearer": []
+        }
+      ]
+    }
+  }
+}

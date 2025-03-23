@@ -1,0 +1,21 @@
+# /api/v1/retrieval/reset/uploads
+
+## Table of contents:
+- [post](#post)
+
+- [json file](./_api_v1_retrieval_reset_uploads.json)
+
+---
+<a name="post"></a>
+## post
+
+**tags:** ['retrieval']
+
+**summary:** Reset Upload Dir
+
+**operationId:** reset_upload_dir_api_v1_retrieval_reset_uploads_post
+
+**responses:** {'200': {'description': 'Successful Response', 'content': {'application/json': {'schema': {'type': 'boolean', 'title': 'Response Reset Upload Dir Api V1 Retrieval Reset Uploads Post'}}}}}
+
+**security:** [{'HTTPBearer': []}]
+

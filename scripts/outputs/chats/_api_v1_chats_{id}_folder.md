@@ -1,0 +1,25 @@
+# /api/v1/chats/{id}/folder
+
+## Table of contents:
+- [post](#post)
+
+- [json file](./_api_v1_chats_{id}_folder.json)
+
+---
+<a name="post"></a>
+## post
+
+**tags:** ['chats']
+
+**summary:** Update Chat Folder Id By Id
+
+**operationId:** update_chat_folder_id_by_id_api_v1_chats__id__folder_post
+
+**security:** [{'HTTPBearer': []}]
+
+**parameters:** [{'name': 'id', 'in': 'path', 'required': True, 'schema': {'type': 'string', 'title': 'Id'}}]
+
+**requestBody:** {'required': True, 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/ChatFolderIdForm'}}}}
+
+**responses:** {'200': {'description': 'Successful Response', 'content': {'application/json': {'schema': {'anyOf': [{'$ref': '#/components/schemas/ChatResponse'}, {'type': 'null'}], 'title': 'Response Update Chat Folder Id By Id Api V1 Chats  Id  Folder Post'}}}}, '422': {'description': 'Validation Error', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/HTTPValidationError'}}}}}
+

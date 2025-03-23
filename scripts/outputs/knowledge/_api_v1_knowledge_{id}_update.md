@@ -1,0 +1,25 @@
+# /api/v1/knowledge/{id}/update
+
+## Table of contents:
+- [post](#post)
+
+- [json file](./_api_v1_knowledge_{id}_update.json)
+
+---
+<a name="post"></a>
+## post
+
+**tags:** ['knowledge']
+
+**summary:** Update Knowledge By Id
+
+**operationId:** update_knowledge_by_id_api_v1_knowledge__id__update_post
+
+**security:** [{'HTTPBearer': []}]
+
+**parameters:** [{'name': 'id', 'in': 'path', 'required': True, 'schema': {'type': 'string', 'title': 'Id'}}]
+
+**requestBody:** {'required': True, 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/KnowledgeForm'}}}}
+
+**responses:** {'200': {'description': 'Successful Response', 'content': {'application/json': {'schema': {'anyOf': [{'$ref': '#/components/schemas/KnowledgeFilesResponse'}, {'type': 'null'}], 'title': 'Response Update Knowledge By Id Api V1 Knowledge  Id  Update Post'}}}}, '422': {'description': 'Validation Error', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/HTTPValidationError'}}}}}
+

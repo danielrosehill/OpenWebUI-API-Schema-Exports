@@ -1,0 +1,21 @@
+# /api/v1/retrieval/ef/{text}
+
+## Table of contents:
+- [get](#get)
+
+- [json file](./_api_v1_retrieval_ef_{text}.json)
+
+---
+<a name="get"></a>
+## get
+
+**tags:** ['retrieval']
+
+**summary:** Get Embeddings
+
+**operationId:** get_embeddings_api_v1_retrieval_ef__text__get
+
+**parameters:** [{'name': 'text', 'in': 'path', 'required': True, 'schema': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'title': 'Text'}}]
+
+**responses:** {'200': {'description': 'Successful Response', 'content': {'application/json': {'schema': {}}}}, '422': {'description': 'Validation Error', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/HTTPValidationError'}}}}}
+

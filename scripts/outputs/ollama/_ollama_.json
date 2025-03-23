@@ -1,0 +1,38 @@
+{
+  "/ollama/": {
+    "get": {
+      "tags": [
+        "ollama"
+      ],
+      "summary": "Get Status",
+      "operationId": "get_status_ollama__get",
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        }
+      }
+    },
+    "head": {
+      "tags": [
+        "ollama"
+      ],
+      "summary": "Get Status",
+      "operationId": "get_status_ollama__head",
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+# /api/v1/functions/id/{id}/valves/user
+
+## Table of contents:
+- [get](#get)
+
+- [json file](./_api_v1_functions_id_{id}_valves_user.json)
+
+---
+<a name="get"></a>
+## get
+
+**tags:** ['functions']
+
+**summary:** Get Function User Valves By Id
+
+**operationId:** get_function_user_valves_by_id_api_v1_functions_id__id__valves_user_get
+
+**security:** [{'HTTPBearer': []}]
+
+**parameters:** [{'name': 'id', 'in': 'path', 'required': True, 'schema': {'type': 'string', 'title': 'Id'}}]
+
+**responses:** {'200': {'description': 'Successful Response', 'content': {'application/json': {'schema': {'anyOf': [{'type': 'object'}, {'type': 'null'}], 'title': 'Response Get Function User Valves By Id Api V1 Functions Id  Id  Valves User Get'}}}}, '422': {'description': 'Validation Error', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/HTTPValidationError'}}}}}
+

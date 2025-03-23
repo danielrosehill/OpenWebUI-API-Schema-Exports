@@ -1,0 +1,49 @@
+{
+  "/api/v1/retrieval/ef/{text}": {
+    "get": {
+      "tags": [
+        "retrieval"
+      ],
+      "summary": "Get Embeddings",
+      "operationId": "get_embeddings_api_v1_retrieval_ef__text__get",
+      "parameters": [
+        {
+          "name": "text",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Text"
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        },
+        "422": {
+          "description": "Validation Error",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HTTPValidationError"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

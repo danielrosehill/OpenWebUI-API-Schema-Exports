@@ -1,0 +1,23 @@
+# /api/v1/chats/archived
+
+## Table of contents:
+- [get](#get)
+
+- [json file](./_api_v1_chats_archived.json)
+
+---
+<a name="get"></a>
+## get
+
+**tags:** ['chats']
+
+**summary:** Get Archived Session User Chat List
+
+**operationId:** get_archived_session_user_chat_list_api_v1_chats_archived_get
+
+**security:** [{'HTTPBearer': []}]
+
+**parameters:** [{'name': 'skip', 'in': 'query', 'required': False, 'schema': {'type': 'integer', 'default': 0, 'title': 'Skip'}}, {'name': 'limit', 'in': 'query', 'required': False, 'schema': {'type': 'integer', 'default': 50, 'title': 'Limit'}}]
+
+**responses:** {'200': {'description': 'Successful Response', 'content': {'application/json': {'schema': {'type': 'array', 'items': {'$ref': '#/components/schemas/ChatTitleIdResponse'}, 'title': 'Response Get Archived Session User Chat List Api V1 Chats Archived Get'}}}}, '422': {'description': 'Validation Error', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/HTTPValidationError'}}}}}
+
