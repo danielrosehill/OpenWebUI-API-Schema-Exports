@@ -1,0 +1,18 @@
+{
+  "/manifest.json": {
+    "get": {
+      "summary": "Get Manifest Json",
+      "operationId": "get_manifest_json_manifest_json_get",
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

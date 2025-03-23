@@ -1,0 +1,23 @@
+{
+  "/api/models": {
+    "get": {
+      "summary": "Get Models",
+      "operationId": "get_models_api_models_get",
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        }
+      },
+      "security": [
+        {
+          "HTTPBearer": []
+        }
+      ]
+    }
+  }
+}

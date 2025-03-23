@@ -1,0 +1,23 @@
+# /api/v1/channels/{id}/messages/{message_id}/thread
+
+## Table of contents:
+- [get](#get)
+
+- [json file](./_api_v1_channels_{id}_messages_{message_id}_thread.json)
+
+---
+<a name="get"></a>
+## get
+
+**tags:** ['channels']
+
+**summary:** Get Channel Thread Messages
+
+**operationId:** get_channel_thread_messages_api_v1_channels__id__messages__message_id__thread_get
+
+**security:** [{'HTTPBearer': []}]
+
+**parameters:** [{'name': 'id', 'in': 'path', 'required': True, 'schema': {'type': 'string', 'title': 'Id'}}, {'name': 'message_id', 'in': 'path', 'required': True, 'schema': {'type': 'string', 'title': 'Message Id'}}, {'name': 'skip', 'in': 'query', 'required': False, 'schema': {'type': 'integer', 'default': 0, 'title': 'Skip'}}, {'name': 'limit', 'in': 'query', 'required': False, 'schema': {'type': 'integer', 'default': 50, 'title': 'Limit'}}]
+
+**responses:** {'200': {'description': 'Successful Response', 'content': {'application/json': {'schema': {'type': 'array', 'items': {'$ref': '#/components/schemas/MessageUserResponse'}, 'title': 'Response Get Channel Thread Messages Api V1 Channels  Id  Messages  Message Id  Thread Get'}}}}, '422': {'description': 'Validation Error', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/HTTPValidationError'}}}}}
+

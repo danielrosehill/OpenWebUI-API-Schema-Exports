@@ -1,0 +1,18 @@
+{
+  "/opensearch.xml": {
+    "get": {
+      "summary": "Get Opensearch Xml",
+      "operationId": "get_opensearch_xml_opensearch_xml_get",
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

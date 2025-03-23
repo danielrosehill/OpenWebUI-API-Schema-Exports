@@ -1,0 +1,57 @@
+{
+  "/ollama/api/create/{url_idx}": {
+    "post": {
+      "tags": [
+        "ollama"
+      ],
+      "summary": "Create Model",
+      "operationId": "create_model_ollama_api_create__url_idx__post",
+      "security": [
+        {
+          "HTTPBearer": []
+        }
+      ],
+      "parameters": [
+        {
+          "name": "url_idx",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "integer",
+            "title": "Url Idx"
+          }
+        }
+      ],
+      "requestBody": {
+        "required": true,
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/CreateModelForm"
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        },
+        "422": {
+          "description": "Validation Error",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HTTPValidationError"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "/api/tasks": {
+    "get": {
+      "summary": "List Tasks Endpoint",
+      "operationId": "list_tasks_endpoint_api_tasks_get",
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        }
+      },
+      "security": [
+        {
+          "HTTPBearer": []
+        }
+      ]
+    }
+  }
+}

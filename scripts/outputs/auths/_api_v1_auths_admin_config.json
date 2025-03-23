@@ -1,0 +1,68 @@
+{
+  "/api/v1/auths/admin/config": {
+    "get": {
+      "tags": [
+        "auths"
+      ],
+      "summary": "Get Admin Config",
+      "operationId": "get_admin_config_api_v1_auths_admin_config_get",
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        }
+      },
+      "security": [
+        {
+          "HTTPBearer": []
+        }
+      ]
+    },
+    "post": {
+      "tags": [
+        "auths"
+      ],
+      "summary": "Update Admin Config",
+      "operationId": "update_admin_config_api_v1_auths_admin_config_post",
+      "requestBody": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/AdminConfig"
+            }
+          }
+        },
+        "required": true
+      },
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        },
+        "422": {
+          "description": "Validation Error",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HTTPValidationError"
+              }
+            }
+          }
+        }
+      },
+      "security": [
+        {
+          "HTTPBearer": []
+        }
+      ]
+    }
+  }
+}
